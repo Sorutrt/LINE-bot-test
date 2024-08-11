@@ -1,11 +1,11 @@
 import * as https from "https";
-import * as express from "express";
-import { dotenv, process } from "dotenv";
+import express from "express";
+//import { dotenv } from "dotenv";
 
 const app = express();
 
 const PORT = process.env.PORT || 3000;
-const TOKEN = precess.env.LINE_ACCESS_TOKEN;
+const TOKEN = process.env.LINE_ACCESS_TOKEN;
 
 // ミドルウェア設定
 app.use(express.json());
